@@ -5,20 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculador de U.I</title>
-  <link rel="stylesheet" href="/main.css">
-  <script src="/index.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/index.js"></script>
 </head>
 
 <body>
   <div class="input-container">
     <label for="glicemia">Glicemia:</label>
     <input type="text" id="glicemia" placeholder="Valor da glicemia (mg/dL)">
+    <div id="glicemia-error" class="error-message"></div>
 
     <label for="carboidratos">Carboidratos:</label>
     <input type="text" id="carboidratos" placeholder="Valor de carboidratos (g)">
+    <div id="carboidratos-error" class="error-message"></div>
 
     <div class="button-container">
-      <button type="submit" onclick="enviarRespostas()">Enviar</button>
+      <button type="submit" onclick="enviarRespostas()">Calcular</button>
+      <button onclick="limparInputs()">Limpar</button>
+      <button onclick="verHistorico()">Histórico</button>
     </div>
 
     <label for="resultado">Resultado:</label>

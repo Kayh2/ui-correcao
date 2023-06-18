@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family= Athiti & display=swap');
+
+body {
+  background: #ddbb66;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bg_list {
+  background: #fff;
+  display: inline-block;
+}
