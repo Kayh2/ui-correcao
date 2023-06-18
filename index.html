@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculador de U.I</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+  <div class="input-container">
+    <label for="glicemia">Glicemia:</label>
+    <input type="text" id="glicemia" placeholder="Valor da glicemia (mg/dL)">
+
+    <label for="carboidratos">Carboidratos:</label>
+    <input type="text" id="carboidratos" placeholder="Valor de carboidratos (g)">
+
+    <div class="button-container">
+      <button type="submit" onclick="enviarRespostas()">Enviar</button>
+    </div>
+
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado" readonly>
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
